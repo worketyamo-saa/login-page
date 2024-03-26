@@ -9,17 +9,26 @@
   --font: "Poppins", sans-serif;
 }
 
+/* 1rem === la police de la page ; 1rem ===> 10px */
 * {
   margin: 0;
   padding: 0;
   border: 0;
 }
 
+html {
+  font-size: 10px;
+  font-family: var(--font);
+}
+
 body {
+  font-size: 1.4rem;
   width: 100vw;
   overflow-x: hidden;
   height: 100vh;
   overflow-y: hidden;
+  box-sizing: border-box;
+  padding: 6rem;
 }
 
 .container {
@@ -35,11 +44,34 @@ body {
   background-image: url(./images/background.svg);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: contain;
 }
 
 .container__input {
   flex: 1;
-  background-color: blueviolet;
+  padding: 4rem;
 }
 
+.container__input_text > h1 {
+  font-size: 4rem;
+  font-weight: medium;
+}
 
+.container__input_form > label > p {
+  font-size: 2rem;
+}
+
+.container__input_form > label > input {
+  width: 100%;
+  height: 5rem;
+  font-size: 2rem;
+  padding: 1rem;
+  border-radius: 2rem;
+  outline: var(--primary-color);
+  border: solid 0.1rem var(--decoration);
+}
+.container__input_form > p {
+  font-size: 2rem;
+  text-align: right;
+}
+.container__input_deco .container__input_buttons;
